@@ -14,6 +14,9 @@ export default {
         xl:'1200px',
         xlg: '1600px'
       },
+      colors:{
+        primary:"#F59E0B"
+      }
     },
   },
   plugins: [],
