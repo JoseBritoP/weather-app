@@ -1,8 +1,11 @@
 import './App.css'
 import Form from './components/Form/Form'
+import Spinner from './components/shared/Spinner';
+import WeatherDetail from './components/shared/WeatherDetail'
+import useWeather from './hooks/useWeather'
 
 function App() {
-
+  const { fetchWeater, weather, hasWeatherTherData, loading } = useWeather();
   return (
     <main className='flex flex-col justify-center items-center gap-y-10'>
       <h1 className='text-center font-bold text-4xl mt-8 mb-4'>Weather App</h1>
@@ -11,8 +14,9 @@ function App() {
         gap-y-5
         md:flex-row md:justify-evenly 
       '>
-        <Form/>
-        <p>h</p>
+        <Form fetchWeather={fetchWeater}/>
+        {hasWeatherTherData && <WeatherDetail weather={weather}/>}
+        {loading && <Spinner/>}
       </section>
     </main>
   )
