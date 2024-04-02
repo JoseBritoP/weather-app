@@ -12,8 +12,8 @@ function App() {
       <h1 className='text-center font-bold text-4xl mt-8 mb-4'>Weather App</h1>
       <section className='w-full max-w-[100rem] mx-auto
         flex flex-col items-center justify-center
-        gap-y-5
-        md:flex-row md:justify-evenly 
+        gap-28
+       md:flex-row
       '>
         <Form fetchWeather={fetchWeater}/>
         {hasWeatherTherData && <WeatherDetail weather={weather}/>}
