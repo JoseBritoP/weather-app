@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function NotFound() {
   return (
     <div className='border-2 py-12 px-10 rounded-md'>
