@@ -31,7 +31,7 @@ export default function useWeather() {
     setWeather(initialState);
     setNotFound(false);
     try {
-      const geoUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${search.city},${search.country}&appid=${import.meta.env.VITE_API_KEY}`
+      const geoUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${search.city},${search.country}&appid=${import.meta.env.VITE_API_KEY}`
       const data = await axios.get(geoUrl);
 
       if(data.status !== 200) throw new Error('Error fetching')
