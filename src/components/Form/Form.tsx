@@ -28,7 +28,7 @@ export default function Form({fetchWeather}:FormProps) {
             ))}
           </select>
         </div>
-        <button aria-label="Check Weather" className="bg-emerald-500 hover:bg-emerald-600 transition-colors ease-in-out py-2 px-10 mx-auto rounded-md border-2 border-green-900 font-semibold">Check weather</button>
+        <button aria-label="Check Weather" className="bg-emerald-500 hover:bg-emerald-600 transition-colors ease-in-out py-2 px-10 mx-auto rounded-md border-2 border-green-900 font-semibold text-green-950">Check weather</button>
       </legend>
     </form>
   )
