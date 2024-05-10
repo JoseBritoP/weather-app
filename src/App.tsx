@@ -3,7 +3,7 @@ import Form from './components/Form/Form'
 import Spinner from './components/shared/Spinner';
 import WeatherDetail from './components/shared/WeatherDetail'
 import useWeather from './hooks/useWeather'
-import NotFound from './components/shared/NotFound';
+import NotFound from './components/shared/NotFound'; 
 
 function App() {
   const { fetchWeater, weather, hasWeatherTherData, loading, notFound } = useWeather();
